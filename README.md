@@ -1,7 +1,5 @@
 # RTGnet
 
-Using RTGnet
-============
 
 RTGnet is a Python based tool, so no real setup or compilation is required.
 The RTGnet tool implements a graph-search algorithm which identifies the
@@ -11,13 +9,15 @@ and additional parameters (see below). The algorithm was published in a peer-
 reviewed journal [https://www.liebertpub.com/doi/full/10.1089/cmb.2015.0168].
 RTGnet is implemented in Python2.7, no setup or compilation is required.
 
-== [Presequites] ==
+
+Presequites
+============
 
 - Python 2 (>= 2.7) 
 - numpy
 
-== [Usage] ==
-
+Usage
+============
 usage: rtgnet.py [-h] [-t T] [-ss SS] graph nodes grammar k maxSize
 
 positional arguments:
@@ -33,12 +33,12 @@ optional arguments:
   -ss SS      Scoring scheme.1=sum of edge weights. 2=Average of edge
               weights.3=sum of grammar weights
 
-== [Example] ==
-
+Example
+============
 python rtgnet.py sample/graph.txt sample/labels.txt sample/grammar.txt 10 5
 
 
- == [Output] ==
-
+ Output
+============
 - dump.txt
 - dump.pkl
